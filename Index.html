@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIYA SINGH™</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
 
+        body {
+            background-color: #0b1118;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background-color: #121a24;
+            border: 1px solid #1e293b;
+            border-radius: 24px;
+            padding: 32px 24px;
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-title {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        .highlight-banner {
+            background-color: #eab308;
+            color: #000000;
+            padding: 14px 16px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 1.4;
+            margin-bottom: 24px;
+        }
+
+        .timer-text {
+            color: #94a3b8;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .timer-text span {
+            color: #22c55e;
+            font-weight: 700;
+        }
+
+        .btn-telegram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(180deg, #991b1b 0%, #7f1d1d 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            border: 2px solid #22c55e;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+            margin-bottom: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-telegram:active {
+            transform: scale(0.98);
+        }
+
+        .icon-circle {
+            background-color: #ffffff;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon-circle svg {
+            width: 18px;
+            height: 18px;
+            fill: #0088cc;
+            margin-right: 2px;
+        }
+
+        .divider {
+            border-top: 1px dashed #334155;
+            margin: 24px 0;
+        }
+
+        .disclaimer {
+            color: #64748b;
+            font-size: 11px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+
+        .ads-footer {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .ads-footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <h1 class="main-title">SONIYA SINGH™</h1>
+
+        <div class="highlight-banner">
+            Accurate analysis • Match Update • Right Pred!ction
+        </div>
+
+        <div class="timer-text">
+            FREE JOINING ENDS IN <span id="countdown">60s</span>
+        </div>
+
+        <a href="https://t.me/+-rnohZ16GaBjZDRl" class="btn-telegram" target="_blank">
+            <span>JOIN TELEGRAM FOR NEW UPDATE</span>
+            <div class="icon-circle">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.128.832.941z"/>
+                </svg>
+            </div>
+        </a>
+
+        <div class="divider"></div>
+
+        <p class="disclaimer">
+            Disclaimer: This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.
+        </p>
+
+        <div class="ads-footer">
+            Ads by <a href="#">Rock bhai Ads Agency</a>
+        </div>
+    </div>
+
+    <script>
+        let timeLeft = 60;
+        const countdownEl = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            timeLeft--;
+            countdownEl.textContent = timeLeft + 's';
+            if (timeLeft <= 0) {
+                timeLeft = 60; // Loop timer
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
